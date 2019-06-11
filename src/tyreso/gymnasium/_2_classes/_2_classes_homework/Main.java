@@ -17,8 +17,18 @@ public class Main {
 
         //Print the sound by calling the sound()-method
 
-        //Create a new String variable using the return value of the
+        //Create a new String variable using the return value of the sound()-method as the initial value
 
-        //Print the sound by calling System.out.println() and adding the
+        //Print the sound by calling System.out.println() with the name of the String you just created as the parameter
+
+
+
+        //TODO !!!CHALLENGE!!!   !!!CHALLENGE!!!   !!!CHALLENGE!!!   !!!CHALLENGE!!!   !!!CHALLENGE!!!
+
+        //Test your MyFox-class and the new challenge-methods by creating the MyFox-object and calling its methods
+
+        //TODO !!!CHALLENGE!!!   !!!CHALLENGE!!!   !!!CHALLENGE!!!   !!!CHALLENGE!!!   !!!CHALLENGE!!!
+
+        //Write a method which does something cool or funny and test it. Go nuts! Impress us!
     }
 }
