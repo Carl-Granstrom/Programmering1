@@ -14,6 +14,13 @@ public class DataTypeDecisions {
          *
          * TODO YOUR CODE HERE!!!   YOUR CODE HERE!!!   YOUR CODE HERE!!!   YOUR CODE HERE!!!   YOUR CODE HERE!!!
          */
+
+        //!!!Example!!!
+        //Number of toes on left foot
+        //TODO !REMOVE ME! primitivetype numToesOnLeftFoot;
+        //Becomes
+        byte numToesOnLeftFoot;  //You don't often have more than 128 toes on your feet, hence "byte"
+
         //The number of students in the class
         //TODO !REMOVE ME! primitivetype numStudentsInClass;
 
