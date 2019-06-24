@@ -1,5 +1,10 @@
 package tyreso.gymnasium._4_data_types_2;
 
+/**
+ * A simple Car-class to demonstrate a class made up of both primitive and reference types.
+ *
+ * @author Carl Granström
+ */
 class Car {
     //Primitive types and Strings
     String name;
@@ -30,4 +35,21 @@ class Car {
         this.driverDoor = new Door("Gullwing");
         this.shotgunDoor = new Door("Standard");
     }
+
+    /**
+     * This methods demonstrates one of the points with object oriented programming: the Car-object doesn't have to know
+     * how its engine works. It just asks the engine to start itself.
+     */
+    public void start(){
+        this.engine.ignite();
+    }
+
+    //TODO CODE TOGETHER!!!   CODE TOGETHER!!!   CODE TOGETHER!!!   CODE TOGETHER!!!   CODE TOGETHER!!!
+    /**
+     * It would seem we have no way to keep track of what speed the Car has, nor can we increase or decrease that speed.
+     * Unless were happy just standing still with our engine running then that's fine, but we could do more.
+     *
+     * 1. Let's add variables for speed
+     * 2. ...and methods for changing the speed
+     */
 }
