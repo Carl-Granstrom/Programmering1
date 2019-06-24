@@ -1,4 +1,4 @@
-package tyreso.gymnasium._4_operators;
+package tyreso.gymnasium._5_operators;
 
 public class SimpleOperators {
 
