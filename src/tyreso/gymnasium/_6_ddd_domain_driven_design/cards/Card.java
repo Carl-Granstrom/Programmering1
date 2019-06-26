@@ -1,4 +1,4 @@
-package tyreso.gymnasium._6_ddd_domain_driven_design.Cars.cars;
+package tyreso.gymnasium._6_ddd_domain_driven_design.cards;
 
 /**
  * This class represents the cards in a deck of cards.
