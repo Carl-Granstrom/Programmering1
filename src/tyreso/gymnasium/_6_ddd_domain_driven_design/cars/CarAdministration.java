@@ -6,9 +6,9 @@ package tyreso.gymnasium._6_ddd_domain_driven_design.cars;
  */
 public class CarAdministration {
 
-    //Declare variables
+    //Deklarera variabler - Declare variables
 
-    //Constructor
+    //Konstruktor - Constructor
 
-    //Methods
+    //Metoder - Methods
 }
