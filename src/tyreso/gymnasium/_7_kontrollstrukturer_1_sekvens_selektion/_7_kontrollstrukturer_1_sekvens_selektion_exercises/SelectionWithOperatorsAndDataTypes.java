@@ -41,6 +41,7 @@ public class SelectionWithOperatorsAndDataTypes {
         //Fix the bug in this reworked version of the if/else mathClass code from PowerPoint 7
         SecureRandom random = new SecureRandom();
         int classSize = random.nextInt(33); //assigns an integer between 0 and 32
+        System.out.println("Size of the class is: " + classSize);
         if (classSize < 6) {
             System.out.println("Class is to small, canceling");
         }

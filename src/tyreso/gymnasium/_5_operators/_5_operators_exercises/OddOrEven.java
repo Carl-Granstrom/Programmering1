@@ -13,7 +13,7 @@ public class OddOrEven {
         /**
          * 1. Kontrollera vilken av variablerna a, b och c är jämn och vilka som är udda med hjälp av en av operatörerna
          * 2. Skriv ut ditt resultat på ett användarvänligt(läsbart) sätt till konsolen
-         * HINT: Lösningen bör ge svaret 0 för jämna nummer och svaret ett för ojämna
+         * HINT: Lösningen bör ge svaret 0 för jämna nummer och svaret 1 för ojämna
          *
          * 3. Kontrollera att resten av 9 / 5 är större än eller lika med fyra
          * 3.1 Skriv ut resultatet på ett tydligt sätt
