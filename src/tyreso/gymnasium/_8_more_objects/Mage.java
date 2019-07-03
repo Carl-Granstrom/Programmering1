@@ -16,7 +16,9 @@ public class Mage {
     private String className;
     private String sex;
     private long health;
+    //add variable to hold the health regen
     private long mana;
+    //add variable to hold the mana regen
     private List<Spell> spells;     //We will have a deeper look at this for next class
     private Spell fireball;
 
@@ -52,6 +54,34 @@ public class Mage {
         this.mana -= spell.manaCost;
         return spell.hit();
     }
+
+    /**
+     * This method handles how the Mage takes damage. Depending on implementation you might need to add more variables
+     * as well.
+     */
+    //TODO YOUR CODE HERE!!!   YOUR CODE HERE!!!   YOUR CODE HERE!!!   YOUR CODE HERE!!!   YOUR CODE HERE!!!
+
+    //parameter for the amount of raw dmg dealt
+    //check for mitigation
+        //check for physical mitigation
+            //apply flat reduction
+                //Check for greater than 0
+            //apply %-age reduction
+        //check for magic mitigation
+            //apply flat reduction
+                //Check for greater than 0
+            //apply %age reduction
+            //apply resistances
+                //check for damage type
+                //check for resistances
+    //reduce health by the final amount
+        //check for zero or negative health
+    /**
+     * return value(?), boolean for death or the actual health reduction or the final health value?
+     * Maybe we need a new datatype?
+     * TODO END OF YOUR CODE!!!   END OF YOUR CODE!!!   END OF YOUR CODE!!!   END OF YOUR CODE!!!   END OF YOUR CODE!!!
+     */
+
 
     /**
      * Getters and setters.
