@@ -22,7 +22,16 @@ public class Mage {
     private List<Spell> spells;     //We will have a deeper look at this for next class
     private Spell fireball;
 
-    //Constructor
+    /**
+     * Constructors need to be public if you want to be able to create the object at all.
+     *
+     * There is a pattern called "Singleton" where you use a private constructor to make sure that only one object from
+     * a certain class is created, this pattern uses a private constructor. Private constructors are also used in
+     * "inner classes", which are classes defined inside another class. There are some use cases for that, but it's
+     * well beyond the scope of this course.
+     *
+     * @param name the name you want the mage to have.
+     */
     public Mage(String name){
         this.name = name;                       //Set the name of the new mage to the supplied String parameter "name"
         this.className = "Mage";                //All mages are of the class Mage
@@ -34,6 +43,8 @@ public class Mage {
     }
 
     //Methods
+    //Methods can be private if they should only be used by the class itself, like when you want to divide a complex
+    //thing you want to do into several steps.
 
     /**
      * Cast a fireball spell.
@@ -50,8 +61,11 @@ public class Mage {
      * @return the damage dealt by the spell before mitigation.
      */
     public double castSpell(int spellNumber) {
+        //assign to local variable "spell" the spell object store at the position specified by spellNumber
         Spell spell = spells.get(spellNumber);
+        //subtract the manacost of the spell stored in local variable "spell" from the manapool of this Mage
         this.mana -= spell.manaCost;
+        //call the hit()-method of the spell stored in the local variable "spell"
         return spell.hit();
     }
 
@@ -61,7 +75,7 @@ public class Mage {
      */
     //TODO YOUR CODE HERE!!!   YOUR CODE HERE!!!   YOUR CODE HERE!!!   YOUR CODE HERE!!!   YOUR CODE HERE!!!
 
-    //parameter for the amount of raw dmg dealt
+    //supply parameter for the amount of raw dmg dealt
     //check for mitigation
         //check for physical mitigation
             //apply flat reduction
