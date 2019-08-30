@@ -31,6 +31,10 @@ package tyreso.gymnasium._0_extra_challenges;
  * om alla elever ska ha svarat innan en elev kan få frågan igen eller om en elev ska kunna få frågan flera gånger i
  * rad.
  *
+ * Bonus 4: Låt användaren mata in statistik över antal korrekta svar per elev och skriva ut den statistiken till
+ * konsollen.
+ *
+ * Bonus 5: LÅt användaren spara statistiken som en .csv-fil
  *
  */
 public class GradeQuest {
