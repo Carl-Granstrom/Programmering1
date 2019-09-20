@@ -14,7 +14,8 @@ public class Main {
         iter.simpleLoop2();
         System.out.println();
         System.out.println("Starting loop of looping method:");
-        for (int i = 0; i < 10; i++){
+
+        for (int i = 1; i < 10; i++){
             String numberEnding = "";
             if (i == 1){
                 numberEnding = "st";
@@ -27,7 +28,7 @@ public class Main {
             }
             //take notice of the (i + 1) part, it's there because we start i at 0, but humans don't normally start
             //counting from 0
-            System.out.println("Running the .simpleLoop()-metod for the " + (i + 1) + numberEnding + " time");
+            System.out.println("Running the .simpleLoop()-metod for the " + i + numberEnding + " time");
             iter.simpleLoop();
         }
     }

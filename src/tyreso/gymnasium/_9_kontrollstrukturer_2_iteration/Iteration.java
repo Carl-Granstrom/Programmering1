@@ -34,8 +34,8 @@ public class Iteration {
          *
          * TODO There's a bug in this loop, see if you can figure it out!
          */
+        int loopTimes = 1;
         for (int i = 2; i < 10000; i *= 2){
-            int loopTimes = 1;
             System.out.println("Loop, pass number: " + loopTimes + ". The variable i is now: " + i);
             loopTimes++;
         }
@@ -48,13 +48,13 @@ public class Iteration {
          *
          * TODO Test changing the grade to be 100 or more from the start. What happens?
          */
-        int myGrade = 75;
+        int myGrade = 666;
         while (myGrade < 100) {
             System.out.println("Grade too shitty, bumping grade from " + myGrade);
             myGrade++;
             System.out.println("Grade bumped to " + myGrade);
         }
-        System.out.println("Grade is " + myGrade + "and is now satisfactory.");
+        System.out.println("Grade is " + myGrade + " and is now satisfactory.");
 
         /**
          * TODO Try removing the break. What happens?
