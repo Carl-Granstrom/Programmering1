@@ -15,7 +15,7 @@ public class OddOrEven {
          * 2. Skriv ut ditt resultat på ett användarvänligt(läsbart) sätt till konsolen
          * HINT: Lösningen bör ge svaret 0 för jämna nummer och svaret 1 för ojämna
          *
-         * 3. Kontrollera att resten av 9 / 5 är större än eller lika med fyra
+         * 3. Kontrollera om resten av 9 / 5 är större än eller lika med fyra
          * 3.1 Skriv ut resultatet på ett tydligt sätt
          *
          * 4.1 Börja med siffran 3 i en variabel
@@ -40,6 +40,8 @@ public class OddOrEven {
         int numOne = 3;
         if (((numOne == 3) && (numOne > 0)) || (5 > 5)) {
             System.out.println("Well that's weird");
+        } else {
+            System.out.println("Whatever");
         }
     }
 }

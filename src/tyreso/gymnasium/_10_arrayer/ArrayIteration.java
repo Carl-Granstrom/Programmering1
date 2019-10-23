@@ -36,7 +36,7 @@ public class ArrayIteration {
             System.out.println(name.charAt(0));
         }
 
-        System.out.println("\nCreating an printing the oddNumbers array:");
+        System.out.println("\nCreating and printing the oddNumbers array:");
         int[] oddNumbers = new int[10];
         int counter = 0;
         for (int number : evenNumbers){

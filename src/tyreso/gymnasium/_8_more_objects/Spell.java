@@ -26,7 +26,7 @@ public class Spell {
         double critRange = random.nextDouble();
 
         if(this.critRate >= critRange){
-            return this.damage * this.critMultiplier;
+            return this.damage * (this.critMultiplier + 1);
         }
         return this.damage;
     }

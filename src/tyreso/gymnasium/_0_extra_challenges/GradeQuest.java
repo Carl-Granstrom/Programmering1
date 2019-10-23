@@ -34,7 +34,7 @@ package tyreso.gymnasium._0_extra_challenges;
  * Bonus 4: Låt användaren mata in statistik över antal korrekta svar per elev och skriva ut den statistiken till
  * konsollen.
  *
- * Bonus 5: LÅt användaren spara statistiken som en .csv-fil
+ * Bonus 5: Låt användaren spara statistiken som en .csv-fil
  *
  */
 public class GradeQuest {

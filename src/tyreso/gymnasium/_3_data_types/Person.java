@@ -13,6 +13,7 @@ public class Person {
     double heightInCentimeters;
     int heightInMillimeters;
     // TODO discuss! weight;
+    double weight;
     char englishGrade;
     char mathGrade;
     char swedishGrade;

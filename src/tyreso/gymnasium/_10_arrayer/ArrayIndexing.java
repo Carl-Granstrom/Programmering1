@@ -39,6 +39,7 @@ public class ArrayIndexing {
         int indexInt = 4;
         System.out.println("Med en variabel som håller indexsiffra:");
         System.out.println(ac.getEvenNumbers()[indexInt]);
+        System.out.println("Det särskilda namnet: ");
         System.out.println(ArrayCreation.getNames()[indexInt] + "\n");
         System.out.println();
 

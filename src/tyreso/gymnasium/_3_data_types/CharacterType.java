@@ -5,6 +5,6 @@ public class CharacterType {
     /**
      * Representerar enstaka bokstäver.
      */
-    char bokstav = 'a';             //anvnd enkla citattecken för char: 'b', 'u'
+    char bokstav = 'a';             //använd enkla citattecken för char: 'b', 'u'
 
 }

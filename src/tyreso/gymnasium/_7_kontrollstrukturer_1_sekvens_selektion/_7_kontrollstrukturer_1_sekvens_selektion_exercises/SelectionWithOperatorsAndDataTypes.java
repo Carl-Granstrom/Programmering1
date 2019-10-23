@@ -43,7 +43,7 @@ public class SelectionWithOperatorsAndDataTypes {
         int classSize = random.nextInt(33); //assigns an integer between 0 and 32
         System.out.println("Size of the class is: " + classSize);
         if (classSize < 6) {
-            System.out.println("Class is to small, canceling");
+            System.out.println("Class is too small, canceling");
         }
         //TODO Use Visual Paradigm to draw a diagram of the code you wrote(this is actually backwards, you usually draw the
         // diagrams first and then build the code based on the diagram, but whatever.

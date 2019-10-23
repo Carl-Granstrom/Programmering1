@@ -10,10 +10,15 @@ public class Main {
          */
 
         //Create a new Fox-object
-
+        TalkingFox myFox = new TalkingFox();
+        TalkingFox anotherFox = new TalkingFox();
+        Fox regularFox = new Fox();
         //Call the sound()-method ten times
 
-        //Create a MyFox-object
+        System.out.println("Pure string: " + myFox.sound());
+
+
+        //Create a MyFox-class
 
         //Print the sound by calling the sound()-method
 

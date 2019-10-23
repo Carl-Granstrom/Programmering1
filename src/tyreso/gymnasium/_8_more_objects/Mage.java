@@ -12,6 +12,7 @@ import java.util.UUID;
 public class Mage {
 
     private UUID id = UUID.randomUUID();
+    private double armor = 3;
     private String name;
     private String className;
     private String sex;
@@ -73,7 +74,10 @@ public class Mage {
      * This method handles how the Mage takes damage. Depending on implementation you might need to add more variables
      * as well.
      */
-    //TODO YOUR CODE HERE!!!   YOUR CODE HERE!!!   YOUR CODE HERE!!!   YOUR CODE HERE!!!   YOUR CODE HERE!!!
+    public void takeDamage(double damage){
+        damage -= this.armor;
+        this.health -= damage;
+    }
 
     //supply parameter for the amount of raw dmg dealt
     //check for mitigation

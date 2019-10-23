@@ -12,7 +12,7 @@ public class Main {
 
         //Now I can use the Engine-object and "place it into" a new Car-object
         Car myNewCar = new Car("Carl's New Car", 4, 5, 345,
-                174, engine2);
+                174, engine2, 43);
 
         //Now what will my new Car object print when I call its .toString()-method?
         System.out.println(myNewCar.toString());
