@@ -6,15 +6,16 @@ public class Card {
     int value;
     boolean faceUp;
 
-    public Card(String suit, int value, boolean faceUp){
+    public Card(String suit, int value, boolean faceUp) {
         this.suit = suit;
         this.value = value;
         this.faceUp = faceUp;
 
     }
+
     // Methods
-    public void flip(){
-        if (faceUp){
+    public void flip() {
+        if (faceUp) {
             faceUp = false;
         } else if (!faceUp) {
             faceUp = true;
@@ -23,9 +24,9 @@ public class Card {
     }
 
     //Turns the card face up if it's facing down, otherwise do nothing
-    public String turnFaceUp(){
+    public String turnFaceUp() {
         String returnString = "";
-        if (faceUp){
+        if (faceUp) {
             returnString = "Card is already face up!";
         } else if (!faceUp) {
             this.flip();
@@ -37,9 +38,9 @@ public class Card {
     }
 
     //Turns the card face down if it's facing up, otherwise do nothing
-    public String turnFaceDown(){
+    public String turnFaceDown() {
         String returnString = "";
-        if (faceUp){
+        if (faceUp) {
             returnString = "Card was flipped face down!";
             this.flip();
         } else if (!faceUp) {
@@ -49,7 +50,19 @@ public class Card {
     }
 
     @Override
-    public String toString(){
+    public String toString() {
         return this.value + " " + this.suit;
+    }
+
+    @Override
+    public boolean equals(Object object) {
+        if (this == object) {
+            return true;
+        }
+        if (object == null || this.getClass() != object.getClass()) {
+            return false;
+        }
+        Card castCard = (Card) object;
+        return (this.value == castCard.value && this.suit == castCard.suit);
     }
 }

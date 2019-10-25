@@ -1,26 +1,23 @@
 package tyreso.gymnasium.cardgame;
 
+import java.security.SecureRandom;
 import java.util.ArrayList;
 
 public class Hand {
-    int currentNumCards;
     int maxCards;
     ArrayList<Card> cards;
 
     Hand(){
-        this.currentNumCards = 0;
         this.maxCards = 10000;
         this.cards = new ArrayList<Card>();
     }
 
     Hand(int maxCards){
-        this.currentNumCards = 0;
         this.maxCards = maxCards;
         this.cards = new ArrayList<Card>();
     }
 
     Hand(String gameName){
-        this.currentNumCards = 0;
         this.cards = new ArrayList<Card>();
         if (gameName.equals("GoFish")) {
             this.maxCards = 999;
@@ -31,8 +28,28 @@ public class Hand {
         }
     }
 
-    public void drawCard(Card card){
+    public void takeCard(Card card){
         cards.add(card);
+    }
+
+    public Card removeCard(int indexPosition){
+        Card tmp = cards.get(indexPosition);
+        cards.remove(indexPosition);
+        return tmp;
+    }
+
+    public Card removeCard(Card card) {
+        if (cards.contains(card)) {
+            int index = cards.indexOf(card);
+            return removeCard(index);
+        }
+        return null;
+    }
+
+    public Card removeRandomCard() {
+        SecureRandom r = new SecureRandom();
+        int randomNumber = r.nextInt(cards.size());
+        return removeCard(randomNumber);
     }
 
 
